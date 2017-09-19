@@ -33,8 +33,9 @@ end
 
 def find_a(array)
   array_of_a =[]
-  a_to_str = array.join(" ")
-  a_to_str.each {|w| array_of_a.push if w.start_with?("a") }
+  array.each do |w| if w.start_with?("a") 
+    array_of_a << w 
+  end
 end
 return array_of_a
 end
