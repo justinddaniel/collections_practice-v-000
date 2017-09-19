@@ -50,6 +50,6 @@ def add_s(array)
   x = array[1]
   array[1].delete
   array.map {|w| w + "s"}
-  array[1] = x 
+  array[1] = x
   return array
 end
