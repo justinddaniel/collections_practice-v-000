@@ -49,7 +49,7 @@ end
 def add_s(array)
   x = array[1]
   array.delete_at(1)
-  array.map {|w| w + "s"}
+  array = array.map {|w| w + "s"}
   array.insert(1, x)
   return array
 end
