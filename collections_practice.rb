@@ -17,3 +17,15 @@ def sort_array_char_count(array)
     end
   end
 end
+
+def swap_elements(array)
+  arrayc = array
+  array[1].delete
+  array[1] << arrayc[2]
+  array[2].delete
+  array[2] << arrayc[1]
+  return array
+end
+
+
+  
